@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="outfit_black">
+        <item name="android:fontFamily">@font/outfit_black</item>
+    </style>
+    <style name="outfit_bold">
+        <item name="android:fontFamily">@font/outfit_bold</item>
+    </style>
+    <style name="outfit_extrabold">
+        <item name="android:fontFamily">@font/outfit_extrabold</item>
+    </style>
+    <style name="outfit_extralight">
+        <item name="android:fontFamily">@font/outfit_extralight</item>
+    </style>
+    <style name="outfit_medium">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+    </style>
+    <style name="outfit_regular">
+        <item name="android:fontFamily">@font/outfit_regular</item>
+    </style>
+    <style name="outfit_semibold">
+        <item name="android:fontFamily">@font/outfit_semibold</item>
+    </style>
+    <style name="outfit_thin">
+        <item name="android:fontFamily">@font/outfit_thin</item>
+    </style>
+
+</resources>
