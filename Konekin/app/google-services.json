@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "683016477939",
+    "project_id": "konekin-316a8",
+    "storage_bucket": "konekin-316a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683016477939:android:cee0cf40660d70d3dfab86",
+        "android_client_info": {
+          "package_name": "com.example.konekin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683016477939-f46c1ahjacvui0pg5176kioorft20ehn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.konekin",
+            "certificate_hash": "6ceeddf2aabf022cbeae0aa93a3687e0389feeb7"
+          }
+        },
+        {
+          "client_id": "683016477939-diq9f07dvrj9kd4kbanfo03rm5nflrj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1utalurd3kpXUX7c_3yQi_DICQrMkrHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683016477939-diq9f07dvrj9kd4kbanfo03rm5nflrj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
