@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/landing_page_3"
+    android:background="@drawable/image_landing_page_3"
     tools:context=".onboarding.screens.ThirdScreen">
 
     <!-- TODO: Update blank fragment layout -->
