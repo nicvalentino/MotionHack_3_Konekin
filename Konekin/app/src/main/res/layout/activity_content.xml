@@ -1,9 +1,529 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ContentActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alice_blue"
+        tools:context=".ContentActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="391dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_konten4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/shadow_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_date2"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView27"
+                app:layout_constraintStart_toEndOf="@+id/textView27"
+                app:layout_constraintTop_toTopOf="@+id/textView27"
+                app:srcCompat="@drawable/image_ticket" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="2"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/orange"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                app:layout_constraintStart_toEndOf="@+id/textView24"
+                app:layout_constraintTop_toTopOf="@+id/textView24"
+                app:srcCompat="@drawable/ic_orange_star" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="4.7 | 200 Partisipan"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="19:00-20.00, 23 Februari 2023"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+                app:layout_constraintStart_toEndOf="@+id/imageView19"
+                app:layout_constraintTop_toTopOf="@+id/imageView19"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:maxLines="2"
+                android:text="Cara Membuat CV di Era \n5.0"
+                android:textAppearance="@style/outfit_semibold"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/yellow_button_bg"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:text="Edukasi"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/orange"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView23"
+                app:srcCompat="@drawable/ic_bookmark" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shadow_bg"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:maxLines="2"
+                android:text="Mengenai Konten"
+                android:textAppearance="@style/outfit_semibold"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView14"
+                app:layout_constraintStart_toStartOf="@+id/imageView_KontenKreator"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_KontenKreator" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:maxLines="4"
+                android:text="Pada webinar kali ini akan menjelaskan bagaimana cara membuat CV yang baik dan benar untuk menghadapi persaingan dunia kerja di Era 5.0. Peserta Lihat Lebih..."
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosen Literatur | 10 Tahun Pengalaman"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView_Star"
+                app:layout_constraintStart_toStartOf="@+id/textView_Content_Kreator_Name"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Content_Kreator_Name" />
+
+            <ImageView
+                android:id="@+id/imageView_KontenKreator"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@+id/textView29"
+                app:layout_constraintTop_toBottomOf="@+id/textView29"
+                app:srcCompat="@drawable/image_kontenkreator2" />
+
+            <TextView
+                android:id="@+id/textView_Content_Kreator_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Anita Salim"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_KontenKreator"
+                app:layout_constraintTop_toTopOf="@+id/imageView_KontenKreator" />
+
+            <ImageView
+                android:id="@+id/imageView_Star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_KontenKreator"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:srcCompat="@drawable/ic_orange_star" />
+
+            <TextView
+                android:id="@+id/textView_Content_Creator_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="4.9"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_Star"
+                app:layout_constraintStart_toEndOf="@+id/imageView_Star"
+                app:layout_constraintTop_toTopOf="@+id/imageView_Star" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:maxLines="2"
+                android:text="Kreator"
+                android:textAppearance="@style/outfit_semibold"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="179dp"
+            android:background="@drawable/shadow_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="Lihat Semua"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:maxLines="2"
+                android:text="Ulasan (23)"
+                android:textAppearance="@style/outfit_semibold"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView33"
+                app:layout_constraintTop_toBottomOf="@+id/textView33">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="225dp"
+                        android:layout_height="170dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/shadow_bg"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView_Review_More1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_more"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView_Reviewer_Profile_Picture1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/image_profilulasan1" />
+
+                        <TextView
+                            android:id="@+id/textView_Review_Body1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="12dp"
+                            android:maxLines="4"
+                            android:text="Belajar disini seru banget! Gurunya berpengalaman di bidangnya dan punya cara ngajar yang unik supaya kita cepet ngerti."
+                            android:textAppearance="@style/outfit_regular"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView_Review_More1"
+                            app:layout_constraintStart_toStartOf="@+id/imageView_Reviewer_Profile_Picture1"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_Review_Date1"
+                            tools:maxLines="5" />
+
+                        <TextView
+                            android:id="@+id/textView_Reviewer_Name1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Amy Kirana"
+                            android:textAppearance="@style/outfit_medium"
+                            android:textColor="@color/dark_charcoal"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView_Review_More1"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_Reviewer_Profile_Picture1"
+                            app:layout_constraintTop_toTopOf="@+id/imageView_Reviewer_Profile_Picture1" />
+
+                        <TextView
+                            android:id="@+id/textView_Review_Date1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="23 Dec, 12.34 pm"
+                            android:textAppearance="@style/outfit_medium"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView_Review_More1"
+                            app:layout_constraintStart_toStartOf="@+id/textView_Reviewer_Name1"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_Reviewer_Name1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="225dp"
+                        android:layout_height="170dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/shadow_bg"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView_Review_More2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_more"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView_Reviewer_Profile_Picture2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/image_profilulasan2" />
+
+                        <TextView
+                            android:id="@+id/textView_Review_Body2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="12dp"
+                            android:maxLines="4"
+                            android:text="Belajar disini seru banget! Gurunya berpengalaman di bidangnya dan punya cara ngajar yang unik supaya kita cepet ngerti."
+                            android:textAppearance="@style/outfit_regular"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView_Review_More2"
+                            app:layout_constraintStart_toStartOf="@+id/imageView_Reviewer_Profile_Picture2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_Review_Date2"
+                            tools:maxLines="5" />
+
+                        <TextView
+                            android:id="@+id/textView_Reviewer_Name2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Amy Kirana"
+                            android:textAppearance="@style/outfit_medium"
+                            android:textColor="@color/dark_charcoal"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView_Review_More2"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_Reviewer_Profile_Picture2"
+                            app:layout_constraintTop_toTopOf="@+id/imageView_Reviewer_Profile_Picture2" />
+
+                        <TextView
+                            android:id="@+id/textView_Review_Date2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="12dp"
+                            android:text="23 Dec, 12.34 pm"
+                            android:textAppearance="@style/outfit_medium"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView_Review_More2"
+                            app:layout_constraintStart_toStartOf="@+id/textView_Reviewer_Name2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_Reviewer_Name2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_bg"
+            android:padding="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/orange"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView37"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toTopOf="@+id/textView38"
+                app:srcCompat="@drawable/image_ticket" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="TOTAL (tiketmu sekarang : 2)"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_button_bg"
+                android:text="Beli Sekarang"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView37"
+                app:layout_constraintStart_toStartOf="@+id/textView38" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView37"
+                app:layout_constraintTop_toBottomOf="@+id/textView37"
+                app:srcCompat="@drawable/ic_arrowup" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

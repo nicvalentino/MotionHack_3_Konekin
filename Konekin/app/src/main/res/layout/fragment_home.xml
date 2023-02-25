@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:text="3500"
+                android:text="35000"
                 android:textAppearance="@style/outfit_medium"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
@@ -156,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="2"
+                android:text="20"
                 android:textAppearance="@style/outfit_medium"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
@@ -993,7 +993,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/image_konten1" />
+                app:srcCompat="@drawable/image_konten2" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -1006,7 +1006,7 @@
                 android:paddingTop="4dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="4dp"
-                android:text="Edukasi"
+                android:text="Gamer"
                 android:textAppearance="@style/outfit_medium"
                 android:textColor="@color/orange"
                 android:textSize="12sp"
@@ -1019,7 +1019,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:gravity="left"
-                android:text="Cara membuat CV di Era 5.0"
+                android:text="Main Stumble Sampe Subuh"
                 android:textAppearance="@style/outfit_medium"
                 android:textColor="@color/dark_charcoal"
                 android:textSize="14sp"
@@ -1072,7 +1072,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:text="4.7 | 200 Partisipan"
+                android:text="4.9 | 127 Partisipan"
                 android:textAppearance="@style/outfit_regular"
                 android:textColor="@color/gray"
                 android:textSize="12sp"

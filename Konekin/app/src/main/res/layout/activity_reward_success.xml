@@ -1,9 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/reward_success_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/red_primary"
     tools:context=".RewardSuccessActivity">
 
+    <ImageButton
+        android:id="@+id/reward_success_backbutton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:background="@color/red_primary"
+        android:src="@drawable/ic_whitebackbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reward_success_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_bold"
+        android:text="Reward"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/reward_success_backbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/reward_success_backbutton" />
+
+    <TextView
+        android:id="@+id/reward_success_textView_2"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_bold"
+        android:text="Selamat! Kamu berhasil menukarkan poinmu"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="@+id/reward_success_textView"
+        app:layout_constraintEnd_toEndOf="@id/reward_success_textView"
+        app:layout_constraintTop_toBottomOf="@+id/reward_success_textView" />
+
+    <ImageView
+        android:id="@+id/reward_sucess_image"
+        android:layout_width="283dp"
+        android:layout_height="210dp"
+        android:src="@drawable/image_reward_success"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/reward_success_textView_2"
+        app:layout_constraintStart_toStartOf="@+id/reward_success_textView_2"
+        app:layout_constraintTop_toBottomOf="@+id/reward_success_textView_2" />
+
+    <TextView
+        android:id="@+id/reward_success_textView_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_semibold"
+        android:text="Kamu mendapatkan tiket"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/reward_sucess_image"
+        app:layout_constraintStart_toStartOf="@+id/reward_sucess_image"
+        app:layout_constraintTop_toBottomOf="@+id/reward_sucess_image" />
+
+    <LinearLayout
+        android:id="@+id/reward_success_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/reward_success_textView_3"
+        app:layout_constraintTop_toBottomOf="@+id/reward_success_textView_3"
+        app:layout_constraintEnd_toEndOf="@+id/reward_success_textView_3">
+
+        <ImageView
+            android:id="@+id/reward_sucess_imageTicket"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/image_ticket"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/reward_success_textView_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Tiket"
+            android:textColor="@color/white"
+            android:fontFamily="@font/outfit_bold"
+            android:textSize="32sp"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reward_success_buttonKlaimTicket"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/white_button_bg"
+        android:text="Klaim Tiket"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:fontFamily="@font/outfit_bold"
+        android:textColor="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="@+id/reward_success_layout_2"
+        app:layout_constraintTop_toBottomOf="@+id/reward_success_layout_2"
+        app:layout_constraintStart_toStartOf="@+id/reward_success_layout_2"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Konekin"
         tools:targetApi="31">
         <activity
+            android:name=".CreatorTimelineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessTransactionActivity"
+            android:exported="false" />
+        <activity
             android:name=".RewardSuccessActivity"
             android:exported="false" />
         <activity

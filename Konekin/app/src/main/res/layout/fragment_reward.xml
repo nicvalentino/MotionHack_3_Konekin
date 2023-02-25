@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,8 +7,574 @@
     tools:context=".fragments.RewardFragment"
     android:background="@color/alice_blue">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/reward_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_home_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="194dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/image_profile_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:paddingTop="12dp"
+                android:text="Nazwa Tazkia Kirana"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_regular"
+                android:text="@string/nazwatk"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reward_layout_Wallet"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/shadow_bg"
+            android:paddingLeft="20dp"
+            android:paddingTop="16dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/reward_textView_PointAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="35000"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/reward_imageView_Point"
+                app:layout_constraintStart_toEndOf="@+id/reward_imageView_Point"
+                app:layout_constraintTop_toTopOf="@+id/reward_imageView_Point" />
+
+            <TextView
+                android:id="@+id/reward_textView_PointPts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="pts"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/reward_textView_PointAmount"
+                app:layout_constraintStart_toEndOf="@+id/reward_textView_PointAmount"
+                app:layout_constraintTop_toTopOf="@+id/reward_textView_PointAmount" />
+
+            <ImageView
+                android:id="@+id/reward_imageView_Point"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/image_poin"
+                app:layout_constraintStart_toStartOf="@+id/reward_textView_Point"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_Point" />
+
+            <TextView
+                android:id="@+id/reward_textView_Ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiket"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/reward_textView_Point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poin"
+                android:textAppearance="@style/outfit_regular"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/reward_imageView_VerticalLine"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/reward_imageView_VerticalLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/element_vertical_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/reward_textView_TicketAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="20"
+                android:textAppearance="@style/outfit_medium"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/reward_textView_Ticket"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_Ticket" />
+
+            <ImageView
+                android:id="@+id/reward_imageView_Ticket"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/image_ticket"
+                app:layout_constraintStart_toEndOf="@+id/reward_textView_TicketAmount"
+                app:layout_constraintTop_toTopOf="@+id/reward_textView_TicketAmount" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reward_layout_tukar_point"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:background="@drawable/image_white_rectangle"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reward_layout_Wallet">
+
+            <TextView
+                android:id="@+id/reward_textView_tukarPoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Tukarkan Poin"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reward_layout_tiket"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/discharge_bg"
+                app:layout_constraintStart_toStartOf="@+id/reward_textView_tukarPoin"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_tukarPoin"
+                >
+
+                <ImageView
+                    android:id="@+id/reward_imageView_Ticket_2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/image_ticket"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/reward_TextView_TukarTiket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                android:text="1xTiket"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="11dp"
+                app:layout_constraintStart_toEndOf="@+id/reward_layout_tiket"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_tukarPoin" />
+
+            <ImageView
+                android:id="@+id/reward_imageView_Point_2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/image_poin"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="@+id/reward_TextView_TukarTiket"
+                app:layout_constraintTop_toBottomOf="@+id/reward_TextView_TukarTiket" />
+
+            <TextView
+                android:id="@+id/reward_textView_Point_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                android:text="1000 pts"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="6dp"
+                app:layout_constraintStart_toEndOf="@+id/reward_imageView_Point_2"
+                app:layout_constraintTop_toBottomOf="@+id/reward_TextView_TukarTiket" />
+
+            <Button
+                android:id="@+id/reward_button_TukarPoin"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_button_bg"
+                android:clickable="true"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Tukarkan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/reward_layout_tiket"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/reward_layout_tiket" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reward_layout_sedang_berlangsung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_white_rectangle"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reward_layout_tukar_point">
+
+            <TextView
+                android:id="@+id/reward_textView_sedangBerlangsung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Sedang Berlangsung"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reward_layout_sedang_berlangsung_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/discharge_bg"
+                android:layout_marginTop="12dp"
+                android:padding="16dp"
+                app:layout_constraintStart_toStartOf="@+id/reward_textView_sedangBerlangsung"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_sedangBerlangsung">
+
+                <ImageView
+                    android:id="@+id/reward_imageView_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_money"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reward_textView_beliKonten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Beli konten pertamamu"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reward_imageView_money"
+                    app:layout_constraintStart_toEndOf="@+id/reward_imageView_money"
+                    app:layout_constraintTop_toTopOf="@+id/reward_imageView_money" />
+
+                <TextView
+                    android:id="@+id/reward_textView_beliKonten_2"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_light"
+                    android:text="Beli konten pertamamu pada aplikasi Konekin dan dapatkan poin!"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/reward_imageView_money"
+                    app:layout_constraintTop_toBottomOf="@+id/reward_imageView_money" />
+
+                <Button
+                    android:layout_width="71dp"
+                    android:layout_height="42sp"
+                    android:background="@drawable/orange_button_bg"
+                    android:drawableStart="@drawable/ic_poin"
+                    android:paddingHorizontal="8dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="+300"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/reward_textView_beliKonten_2"
+                    app:layout_constraintTop_toTopOf="@+id/reward_textView_beliKonten" >
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reward_layout_sedang_berlangsung_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/discharge_bg"
+                android:layout_marginTop="12dp"
+                android:padding="16dp"
+                app:layout_constraintStart_toStartOf="@+id/reward_layout_sedang_berlangsung_2"
+                app:layout_constraintTop_toBottomOf="@+id/reward_layout_sedang_berlangsung_2">
+
+                <ImageView
+                    android:id="@+id/reward_imageView_memo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_memo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reward_textView_berikanReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Berikan review pertamamu"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reward_imageView_memo"
+                    app:layout_constraintStart_toEndOf="@+id/reward_imageView_memo"
+                    app:layout_constraintTop_toTopOf="@+id/reward_imageView_memo" />
+
+                <TextView
+                    android:id="@+id/reward_textView_berikanReview_2"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_light"
+                    android:text="Review konten yang telah kamu beli dan dapatkan poin!"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/reward_imageView_memo"
+                    app:layout_constraintTop_toBottomOf="@+id/reward_imageView_memo" />
+
+                <Button
+                    android:layout_width="71dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/orange_button_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:drawableStart="@drawable/ic_poin"
+                    android:paddingHorizontal="8dp"
+                    android:text="+300"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/reward_textView_berikanReview_2"
+                    app:layout_constraintTop_toTopOf="@+id/reward_textView_berikanReview" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reward_layout_sudah_selesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_white_rectangle"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reward_layout_sedang_berlangsung">
+
+            <TextView
+                android:id="@+id/reward_textView_SudahSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Sudah Selesai"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reward_layout_sudah_selesai_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bright_gray_bg"
+                android:layout_marginTop="12dp"
+                android:padding="16dp"
+                app:layout_constraintStart_toStartOf="@+id/reward_textView_SudahSelesai"
+                app:layout_constraintTop_toBottomOf="@id/reward_textView_SudahSelesai">
+
+                <TextView
+                    android:id="@+id/reward_textView_completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COMPLETED"
+                    android:fontFamily="@font/outfit_light"
+                    android:textSize="10sp"
+                    android:textColor="@color/gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/reward_imageView_money_2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/image_money"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/reward_textView_completed"
+                    app:layout_constraintTop_toBottomOf="@+id/reward_textView_completed" />
+
+                <TextView
+                    android:id="@+id/reward_textView_completed_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Transaksi hingga 250K"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reward_imageView_money_2"
+                    app:layout_constraintStart_toEndOf="@+id/reward_imageView_money_2"
+                    app:layout_constraintTop_toTopOf="@+id/reward_imageView_money_2" />
+
+                <TextView
+                    android:id="@+id/reward_textView_completed_3"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_light"
+                    android:text="Tingkatkan transaksimu sampai dengan 250k untuk mendapatkan poin!"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/reward_imageView_money_2"
+                    app:layout_constraintTop_toBottomOf="@+id/reward_imageView_money_2" />
+
+                <Button
+                    android:layout_width="71dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/gray_button_bg"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:drawableStart="@drawable/ic_poin"
+                    android:paddingHorizontal="8dp"
+                    android:text="+150"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/reward_textView_completed_3"
+                    app:layout_constraintTop_toTopOf="@+id/reward_textView_completed" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reward_layout_undang_teman"
+            android:layout_width="match_parent"
+            android:layout_height="391dp"
+            android:background="@drawable/image_white_rectangle"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reward_layout_sudah_selesai">
+
+            <TextView
+                android:id="@+id/reward_textView_undangTeman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Undang Teman"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/reward_imageView_undangTeman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/image_undang_teman"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_undangTeman" />
+
+            <TextView
+                android:id="@+id/reward_textView_undangTeman_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Bagikan kode referral kamu ke 3 teman kamu dan dapatkan sebanyak 1 tiket secara GRATIS."
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/reward_imageView_undangTeman"
+                app:layout_constraintStart_toStartOf="@+id/reward_imageView_undangTeman"
+                app:layout_constraintTop_toBottomOf="@+id/reward_imageView_undangTeman" />
+
+            <TextView
+                android:id="@+id/reward_textView_undangTeman_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Kode Referral Kamu:"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/outfit_medium"
+                app:layout_constraintEnd_toEndOf="@+id/reward_textView_undangTeman_2"
+                app:layout_constraintStart_toStartOf="@+id/reward_textView_undangTeman_2"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_undangTeman_2" />
+
+            <Button
+                android:id="@+id/reward_button_kodeReferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/yellow_button_bg"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Adn9XI"
+                android:textAllCaps="false"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/reward_textView_undangTeman_3"
+                app:layout_constraintStart_toStartOf="@id/reward_textView_undangTeman_3"
+                app:layout_constraintTop_toBottomOf="@+id/reward_textView_undangTeman_3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -32,4 +598,5 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    -->
+</ScrollView>

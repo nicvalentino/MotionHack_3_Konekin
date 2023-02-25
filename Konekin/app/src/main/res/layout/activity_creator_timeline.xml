@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatorTimelineActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="32dp">
+
+        <ImageButton
+            android:id="@+id/creator_backButton"
+            android:src="@drawable/ic_backbutton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <LinearLayout
+            android:id="@+id/layout_profile_creator"
+            android:layout_width="328dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/image_white_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="114dp"
+                android:layout_height="115dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/image_kontenkreator2"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anita Salim"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dosen Literatur"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:textColor="@color/dark_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:paddingTop="12dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/white_button_bg">
+
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:textColor="@color/dark_gray"
+                        android:text="29"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_regular"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:text="Konten"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/element_vertical_line"/>
+
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:textColor="@color/dark_gray"
+                        android:text="10K"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_regular"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:text="Pengikut"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/element_vertical_line"/>
+
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_semibold"
+                            android:textColor="@color/dark_gray"
+                            android:text="4.9"
+                            android:textSize="20sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_orange_star"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="7dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_regular"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:text="Rating"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/creator_button_requestJadwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_button_bg"
+                android:text="Request Jadwal"
+                android:textAllCaps="false"
+                android:fontFamily="@font/outfit_medium"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activity_creator_kategori"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_profile_creator"
+            app:layout_constraintStart_toStartOf="@+id/layout_profile_creator"
+            app:layout_constraintTop_toBottomOf="@+id/layout_profile_creator">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="23dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Aktivitas"
+                android:textColor="@color/red_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Jadwal"
+                android:textColor="@color/charcoal"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Telah Berakhir"
+                android:textColor="@color/charcoal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_creator_imageViewRedLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_redline"
+            android:layout_marginStart="6dp"
+            app:layout_constraintStart_toStartOf="@+id/layout_activity_creator_kategori"
+            app:layout_constraintTop_toBottomOf="@+id/layout_activity_creator_kategori" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_creator_timeline"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/image_white_rectangle"
+            app:layout_constraintEnd_toEndOf="@+id/layout_activity_creator_kategori"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/layout_activity_creator_kategori"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_creator_kategori">
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/image_kontenkreator2"
+                app:layout_constraintStart_toStartOf="@id/layout_creator_timeline"
+                app:layout_constraintTop_toTopOf="@+id/layout_creator_timeline" />
+
+            <TextView
+                android:id="@+id/activity_creator_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Anita Salim"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_creator_imageView"
+                app:layout_constraintStart_toEndOf="@+id/activity_creator_imageView"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView" />
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView_round_for_creator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_roundforcreator"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_textView"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_textView"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_textView" />
+
+            <TextView
+                android:id="@+id/activity_creator_time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="10 jam yang lalu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_imageView_round_for_creator"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageView_round_for_creator"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView_round_for_creator" />
+
+            <ImageButton
+                android:id="@+id/activity_creator_imageView_threeRound"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_threeround"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_time_textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_time_textView" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Hari ini kebetulan mengisi acara di Universitas Telkom. Audience-nya sangat antusias dalam menyimak materi yang disampaikan &lt;3"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_imageView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="158dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/image_creator_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_textViewStatus" />
+
+            <ImageButton
+                android:id="@+id/activity_creator_imageViewLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:src="@drawable/ic_like"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="120"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_creator_imageViewLike"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageViewLike"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageViewLike" />
+
+            <ImageButton
+                android:id="@+id/activity_creator_imageViewComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_textViewLike"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_textViewLike"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_textViewLike" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="24"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_imageViewComment"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageViewComment"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_imageViewComment" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewTanggapan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Tanggapan(24)"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_imageViewLike" />
+
+            <EditText
+                android:id="@+id/activity_creator_editTextTanggapan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/outfit_regular"
+                android:hint="   Tambahkan komentar..."
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/light_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/activity_creator_textViewTanggapan"
+                app:layout_constraintTop_toBottomOf="@+id/activity_creator_textViewTanggapan" />
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/image_kontenkreator2_round"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_creator_editTextTanggapan" />
+
+            <TextView
+                android:id="@+id/activity_creator_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Anita Salim"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/activity_creator_imageView2"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView2" />
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView_round_for_creator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_roundforcreator"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_textView2"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_textView2"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_textView2" />
+
+            <TextView
+                android:id="@+id/activity_creator_time_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="10 jam yang lalu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_imageView_round_for_creator2"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageView_round_for_creator2"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView_round_for_creator2" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewStatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Thank u kak udah mampir kesinii ^^"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/activity_creator_textView2"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_textView2" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewLiatLainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Lihat lainnya"
+                android:textColor="@color/red_primary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_textViewStatus2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_creator_timeline2"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_white_rectangle"
+            android:layout_marginTop="38dp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_creator_timeline"
+            app:layout_constraintStart_toStartOf="@+id/layout_creator_timeline"
+            app:layout_constraintTop_toBottomOf="@id/layout_creator_timeline">
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/image_kontenkreator2"
+                app:layout_constraintTop_toTopOf="@+id/layout_creator_timeline2"
+                app:layout_constraintStart_toStartOf="@id/layout_creator_timeline2"/>
+
+            <TextView
+                android:id="@+id/activity_creator_textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Anita Salim"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_creator_imageView3"
+                app:layout_constraintStart_toEndOf="@+id/activity_creator_imageView3"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView3" />
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView_round_for_creator3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_roundforcreator"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_textView3"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_textView3"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_textView3" />
+
+            <TextView
+                android:id="@+id/activity_creator_time_textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 jam yang lalu"
+                android:textSize="10sp"
+                android:fontFamily="@font/outfit_regular"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageView_round_for_creator3"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView_round_for_creator3"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_imageView_round_for_creator3"/>
+
+            <ImageButton
+                android:id="@+id/activity_creator_imageView_threeRound3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_threeround"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_time_textView3"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_time_textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/activity_creator_textViewStatus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:text="Jangan lupa untuk beristirahat hari ini"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_imageView3"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="158dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/image_creator_status2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_textViewStatus3" />
+
+            <ImageButton
+                android:id="@+id/activity_creator_imageViewLike2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/ic_like"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewLike2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                android:text="120"
+                android:textColor="@color/dark_gray"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_creator_imageViewLike2"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageViewLike2"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageViewLike2"/>
+
+            <ImageButton
+                android:id="@+id/activity_creator_imageViewComment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_comment"
+                android:background="@color/white"
+                android:layout_marginStart="25dp"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_textViewLike2"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_textViewLike2"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_textViewLike2" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewComment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:fontFamily="@font/outfit_medium"
+                android:textColor="@color/dark_gray"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_imageViewComment2"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_imageViewComment2"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageViewComment2" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewTanggapan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggapan(24)"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="14sp"
+                android:textColor="@color/dark_gray"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_imageViewLike2"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/activity_creator_editTextTanggapan2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_border"
+                android:fontFamily="@font/outfit_regular"
+                android:hint="   Tambahkan komentar..."
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/light_gray"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/activity_creator_textViewTanggapan2"
+                app:layout_constraintTop_toBottomOf="@+id/activity_creator_textViewTanggapan2" />
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView4"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/image_kontenkreator2_round"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_creator_editTextTanggapan2" />
+
+            <TextView
+                android:id="@+id/activity_creator_textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Anita Salim"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/activity_creator_imageView4"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView4" />
+
+            <ImageView
+                android:id="@+id/activity_creator_imageView_round_for_creator4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_roundforcreator"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="@id/activity_creator_textView4"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_textView4"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_textView4" />
+
+            <TextView
+                android:id="@+id/activity_creator_time_textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 jam yang lalu"
+                android:textSize="10sp"
+                android:fontFamily="@font/outfit_regular"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/activity_creator_imageView_round_for_creator4"
+                app:layout_constraintTop_toTopOf="@+id/activity_creator_imageView_round_for_creator4"
+                app:layout_constraintBottom_toBottomOf="@id/activity_creator_imageView_round_for_creator4"/>
+
+            <TextView
+                android:id="@+id/activity_creator_textViewStatus4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Thank u kak udah mampir kesinii ^^"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/activity_creator_textView4"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_textView4" />
+
+            <TextView
+                android:id="@+id/activity_creator_textViewLiatLainnya2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Lihat lainnya"
+                android:textColor="@color/red_primary"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/activity_creator_textViewStatus4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

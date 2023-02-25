@@ -17,7 +17,10 @@
     <color name="charcoal">#464646</color>
     <color name="dark_charcoal">#333333</color>
     <color name="light_gray">#C6C6C6</color>
-    <color name="alice_blue">#F7FCFE</color>
+    <color name="alice_blue">#F8FAFF</color>
     <color name="canary_yellow">#FFEED8</color>
+    <color name="discharge_yellow">#FFF3E3</color>
+    <color name="bright_gray">#EAEAEA</color>
+    <color name="link_water_gray">#CDD0D3</color>
 
 </resources>
