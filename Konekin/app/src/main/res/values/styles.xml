@@ -25,4 +25,18 @@
         <item name="android:fontFamily">@font/outfit_thin</item>
     </style>
 
+    <style
+        name="ActivitySelectedTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/red_primary</item>
+        <item name="android:textAppearance">@font/outfit_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style
+        name="ActivityTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textAppearance">@font/outfit_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>

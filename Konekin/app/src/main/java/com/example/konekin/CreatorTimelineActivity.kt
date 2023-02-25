@@ -10,7 +10,6 @@ class CreatorTimelineActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityCreatorTimelineBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreatorTimelineBinding.inflate(layoutInflater)

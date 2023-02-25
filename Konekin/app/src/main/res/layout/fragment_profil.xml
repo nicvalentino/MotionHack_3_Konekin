@@ -1,8 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ProfilFragment">
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/profile_headerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:background="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_headerImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_double_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_headerImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_pictureImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/image_profile_picture"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_semibold"
+        android:text="Nazwa Tazkia Kirana"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/profile_pictureImageView"
+        app:layout_constraintTop_toTopOf="@+id/profile_pictureImageView" />
+
+    <TextView
+        android:id="@+id/profile_usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nazwatk"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/outfit_regular"
+        app:layout_constraintTop_toBottomOf="@+id/profile_nameTextView"
+        app:layout_constraintStart_toStartOf="@id/profile_nameTextView"/>
+
+    <ImageButton
+        android:id="@+id/profile_editProfileButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_pen"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toTopOf="@id/profile_nameTextView"
+        app:layout_constraintBottom_toBottomOf="@id/profile_usernameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/red_primary"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_myAccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_headerImageView"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <ImageView
+            android:id="@+id/profile_myAccountImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_myaccount"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/profile_myAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_regular"
+            android:text="My Account"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_myAccountImageView"
+            app:layout_constraintStart_toEndOf="@+id/profile_myAccountImageView"
+            app:layout_constraintTop_toTopOf="@+id/profile_myAccountImageView" />
+
+        <ImageButton
+            android:id="@+id/profile_myAccountImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_backbutton_reverse"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_myAccountImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_myAccountImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_accountRecoveryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_myAccountLayout"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <ImageView
+            android:id="@+id/profile_accountRecoveryImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_refresh"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/profile_accountRecoveryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Account Recovery"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_accountRecoveryImageView"
+            app:layout_constraintStart_toEndOf="@+id/profile_accountRecoveryImageView"
+            app:layout_constraintTop_toTopOf="@+id/profile_accountRecoveryImageView" />
+
+        <ImageButton
+            android:id="@+id/profile_accountRecoveryImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_backbutton_reverse"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_accountRecoveryImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_accountRecoveryImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_notificationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_accountRecoveryLayout"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/profile_notificationImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/profile_notificationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Notification"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_notificationImageView"
+            app:layout_constraintStart_toEndOf="@+id/profile_notificationImageView"
+            app:layout_constraintTop_toTopOf="@+id/profile_notificationImageView" />
+
+        <ImageButton
+            android:id="@+id/profile_notificationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_switchtoggle"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_notificationImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_notificationImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_pusatBantuanLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_notificationLayout"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <ImageView
+            android:id="@+id/profile_pusatBantuanImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_headset"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/profile_pusatBantuanTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Pusat Bantuan"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_pusatBantuanImageView"
+            app:layout_constraintStart_toEndOf="@+id/profile_pusatBantuanImageView"
+            app:layout_constraintTop_toTopOf="@+id/profile_pusatBantuanImageView" />
+
+        <ImageButton
+            android:id="@+id/profile_pusatBantuanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_backbutton_reverse"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_pusatBantuanImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_pusatBantuanImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/profile_logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/image_white_rectangle"
+        android:layout_marginTop="35dp"
+        android:text="Log Out"
+        android:fontFamily="@font/outfit_medium"
+        android:textSize="16sp"
+        android:textColor="@color/red_primary"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/ic_logout"
+        android:paddingHorizontal="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_pusatBantuanLayout"
+        app:layout_constraintStart_toStartOf="@+id/profile_pusatBantuanLayout"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pusatBantuanLayout" />
+
+    <!--
+    <Button
+        android:id="@+id/profile_myAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/image_white_rectangle"
+        android:drawableStart="@drawable/ic_myaccount"
+        android:drawableEnd="@drawable/ic_backbutton_reverse"
+        android:fontFamily="@font/outfit_regular"
+        android:padding="16dp"
+        android:text="My Account"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_headerImageView" />
+
+    <Button
+        android:id="@+id/profile_accountRecoveryButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/image_white_rectangle"
+        android:drawableStart="@drawable/ic_refresh"
+        android:drawableEnd="@drawable/ic_backbutton_reverse"
+        android:fontFamily="@font/outfit_regular"
+        android:padding="16dp"
+        android:text="Account Recovery"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_myAccountButton" />
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HistoryActivityFragment">
+
+    <TextView
+        android:id="@+id/history_Activity_textView_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="23 Februari (2)"
+        android:textAppearance="@style/outfit_semibold"
+        android:textColor="@color/dark_charcoal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/history_Activity_layout_Content1"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:background="@drawable/shadow_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/history_Activity_textView_Date"
+        app:layout_constraintTop_toBottomOf="@+id/history_Activity_textView_Date">
+
+        <ImageView
+            android:id="@+id/history_Activity_imageView_Content_Creator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_konten3" />
+
+        <TextView
+            android:id="@+id/history_Activity_textView_Content_Category1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/yellow_button_bg"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="4dp"
+            android:text="Psikolog"
+            android:textAppearance="@style/outfit_medium"
+            android:textColor="@color/orange"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/history_Activity_imageView_Content_Creator1"
+            app:layout_constraintTop_toTopOf="@+id/history_Activity_imageView_Content_Creator1" />
+
+        <TextView
+            android:id="@+id/history_Activity_textView_Content_Title1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="left"
+            android:text="Cara Mengatasi Panic Attack"
+            android:textAppearance="@style/outfit_medium"
+            android:textColor="@color/dark_charcoal"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/history_Activity_imageView_Content_Bookmark1"
+            app:layout_constraintStart_toStartOf="@+id/history_Activity_textView_Content_Category1"
+            app:layout_constraintTop_toBottomOf="@+id/history_Activity_textView_Content_Category1" />
+
+        <ImageView
+            android:id="@+id/history_Activity_imageView_Content_Bookmark1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/history_Activity_textView_Content_Category1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/history_Activity_textView_Content_Category1"
+            app:srcCompat="@drawable/ic_bookmark" />
+
+        <TextView
+            android:id="@+id/history_Activity_textView_Content_Ticket_Amount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textAppearance="@style/outfit_medium"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/history_Activity_textView_Content_Title1"
+            app:layout_constraintTop_toBottomOf="@+id/history_Activity_textView_Content_Title1" />
+
+        <ImageView
+            android:id="@+id/history_Activity_imageView_Content_Ticket1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/history_Activity_textView_Content_Ticket_Amount1"
+            app:layout_constraintStart_toEndOf="@+id/history_Activity_textView_Content_Ticket_Amount1"
+            app:layout_constraintTop_toTopOf="@+id/history_Activity_textView_Content_Ticket_Amount1"
+            app:srcCompat="@drawable/image_ticket" />
+
+        <ImageView
+            android:id="@+id/history_Activity_imageView_Content_Rating1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/history_Activity_textView_Content_Ticket_Amount1"
+            app:layout_constraintTop_toBottomOf="@+id/history_Activity_textView_Content_Ticket_Amount1"
+            app:srcCompat="@drawable/ic_orange_star" />
+
+        <TextView
+            android:id="@+id/history_Activity_textView_Content_Detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="4.8 | 200 Partisipan"
+            android:textAppearance="@style/outfit_regular"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/history_Activity_imageView_Content_Rating1"
+            app:layout_constraintStart_toEndOf="@+id/history_Activity_imageView_Content_Rating1"
+            app:layout_constraintTop_toTopOf="@+id/history_Activity_imageView_Content_Rating1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
